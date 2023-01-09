@@ -1,7 +1,18 @@
-let Loader = document.getElementById("loading");
-window.addEventListener("load", function(){
-    Loader.style.display = "none";
-})
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.querySelector('.popup-window').style.display = "block";
+    }, 1000);
+});
+
+document.querySelector('#close-btn-of-popup-window').addEventListener("click", () => {
+    document.querySelector('.popup-window-container').style.display = "none";
+    document.querySelector('#body').style.overflow = "scroll";
+});
+
+document.querySelector('#lets-go-btn-popup-window').addEventListener("click", () => {
+    document.querySelector('.popup-window-container').style.display = "none";
+    document.querySelector('#body').style.overflow = "scroll";
+});
 
 const openSearch = () => {
     let div = document.getElementById("search-icon-hidden-div");

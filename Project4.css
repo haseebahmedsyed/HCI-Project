@@ -13,20 +13,48 @@ html{
     scroll-behavior: smooth;
 }
 
+#body {
+    overflow: hidden;
+}
+
 .popup-window-container {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#close-btn-of-popup-window {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 12px;
+    margin-bottom: 5px;
+    font-size: 10px;
 }
 
 .popup-window{
-    border: 1px solid;
-    width: 35%;
+    width: 32%;
     margin: auto;
     text-align: center;
     position: relative;
+    padding: 20px 15px;
+    color: #666;
+    display: none;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.popup-window > h4{
+    font-weight: 600;
+    color: #192a56;
+    margin-bottom: 12px;
+    margin-top: 18px;
 }
 
 #lets-go-btn-popup-window {
