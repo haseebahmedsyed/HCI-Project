@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./Project4.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Restaurant Website</title>
     <link rel="stylesheet" media="screen and (max-width: 1400px)" href="./Responsive.css">
@@ -13,11 +16,14 @@
     <!-- bootstrap css and js -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Nunito:wght@200;300;500;600;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Nunito:wght@200;300;500;600;700&family=Poppins:wght@300;500&display=swap"
+        rel="stylesheet">
 </head>
-<body id="body">
-    <div class="popup-window-container">
+
+<body>
+    <!-- <div class="popup-window-container">
         <div class="popup-window">
             <button id="close-btn-of-popup-window"><i class="fa-solid fa-xmark"></i></button>
             <h4>Welcome To The Heaven's Kitchen</h4>
@@ -33,7 +39,9 @@
                 <i class="fa-solid fa-utensils fa-2x"></i>
                 <h1>The Heaven's Kitchen</h1>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: 3px solid black;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="border: 3px solid black;">
                 <i class="fa-solid fa-bars" style="color: black;"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -43,7 +51,7 @@
                         <i class="fa-solid fa-heart fa-1x"></i>
                         <i class="fa-solid fa-cart-shopping fa-1x"></i>
                     </div>
-                    
+
                     <li class="nav-item categories-div">
                         <a class="nav-link active" aria-current="page" href="#home-section">Home</a>
                     </li>
@@ -66,29 +74,35 @@
             </div>
 
             <div id="search-icon-hidden-div">
-                <button id="cross-button-of-search-icon" onclick="closeSearch()"><i class="fa-solid fa-xmark"></i></button>
+                <button id="cross-button-of-search-icon" onclick="closeSearch()"><i
+                        class="fa-solid fa-xmark"></i></button>
                 <div>
                     <input type="text" placeholder="Search Here...">
                     <i class="fa-solid fa-magnifying-glass fa-1x"></i>
                 </div>
             </div>
         </div>
-      </nav> 
+    </nav>
 
     <!-- Home Section -->
-     <div id="home-section">
+    <div id="home-section">
         <img src="./images/home-img.png" alt="">
         <div class="text-of-home">
             <h1>Food Made With Love</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis optio explicabo modi pariatur amet porro dicta ad delectus ullam culpa? Debitis eligendi esse vero libero deserunt doloribus incidunt odio, nostrum placeat tenetur consequatur eveniet? Architecto vero eos aspernatur expedita numquam odit distinctio voluptas culpa sed iusto quam quaerat accusantium molestias corporis voluptatem placeat, sequi possimus ex aut adipisci laborum dignissimos nostrum! Officiis quos sequi excepturi accusamus porro, quasi molestiae nobis aliquid magni voluptatibus molestias expedita?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis optio explicabo modi pariatur amet
+                porro dicta ad delectus ullam culpa? Debitis eligendi esse vero libero deserunt doloribus incidunt odio,
+                nostrum placeat tenetur consequatur eveniet? Architecto vero eos aspernatur expedita numquam odit
+                distinctio voluptas culpa sed iusto quam quaerat accusantium molestias corporis voluptatem placeat,
+                sequi possimus ex aut adipisci laborum dignissimos nostrum! Officiis quos sequi excepturi accusamus
+                porro, quasi molestiae nobis aliquid magni voluptatibus molestias expedita?</p>
             <div class="order-now-div-of-text-of-home">
                 <a href="#order-now-section">Order Now</a>
             </div>
         </div>
-    </div> 
+    </div>
 
     <!-- speciality Section -->
-     <div id="speciality-section">
+    <div id="speciality-section">
         <h1 id="speciality-section-main-heading">Our <span>Special</span> Dishes</h1>
         <div class="sub-container-of-speciality">
             <div class="box-of-speciality">
@@ -107,7 +121,7 @@
                     <a href="#order-now-section" class="order-now-btn-of-box">Order Now</a>
                 </div>
             </div>
-            
+
             <div class="box-of-speciality">
                 <img src="./images/dish-2.png" alt="">
                 <h2>Nuggets</h2>
@@ -160,7 +174,7 @@
                     <a href="#order-now-section" class="order-now-btn-of-box">Order Now</a>
                 </div>
             </div>
-            
+
             <div class="box-of-speciality">
                 <img src="./images/dish-5.png" alt="">
                 <h2>Cake</h2>
@@ -195,10 +209,10 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 
     <!-- About Us Section -->
-     <div id="about-us-section">
+    <div id="about-us-section">
         <div class="about-us-headings">
             <h2>About Us</h2>
             <h1>WHY CHOOSE US?</h1>
@@ -208,8 +222,14 @@
             <img src="./images/about-img.png" alt="">
             <div class="text-of-about-us">
                 <h1>Best Food In The Country</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non unde excepturi sequi veritatis. Blanditiis, nihil nobis consequatur magnam, odit ab deserunt ut iure reprehenderit architecto ducimus molestias? Quo pariatur quae voluptatum tempore earum architecto ipsam velit amet voluptatem perspiciatis adipisci optio consectetur id quam consequuntur quia aut, at iste. Voluptate ipsam doloremque corporis ab ducimus vel ratione, vero at libero eligendi dolore rerum asperiores veniam doloribus maxime possimus, error id repellendus deleniti! Cupiditate, vitae debitis.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus commodi optio facilis nihil sunt quia quasi doloremque ducimus dolores, error quas nisi laborum veritatis sed?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non unde excepturi sequi veritatis.
+                    Blanditiis, nihil nobis consequatur magnam, odit ab deserunt ut iure reprehenderit architecto
+                    ducimus molestias? Quo pariatur quae voluptatum tempore earum architecto ipsam velit amet voluptatem
+                    perspiciatis adipisci optio consectetur id quam consequuntur quia aut, at iste. Voluptate ipsam
+                    doloremque corporis ab ducimus vel ratione, vero at libero eligendi dolore rerum asperiores veniam
+                    doloribus maxime possimus, error id repellendus deleniti! Cupiditate, vitae debitis.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus commodi optio facilis nihil sunt
+                    quia quasi doloremque ducimus dolores, error quas nisi laborum veritatis sed?</p>
 
                 <div class="three-div-of-about-us">
                     <div class="free-delivery-and-easy-payment-div">
@@ -227,13 +247,15 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 
     <!-- Popular Section -->
-     <div id="popular-section">
+    
+    <div id="popular-section">
         <h1 id="popular-section-main-heading">Most <span>Popular</span> Cuisines</h1>
         <div class="sub-container-of-popular-section">
             <div class="box-of-popular">
+            <!-- <div class="box-of-popular" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur doloremque delectus! Quisquam omnis repudiandae dignissimos expedita explicabo aut! Sunt, consequuntur? Adipisci vero porro laudantium iusto, enim officiis nostrum, dolorem consectetur minus facilis magni accusantium fugiat ratione, veniam rerum esse." data-bs-placement="right"> -->
                 <img src="./images/popular-1.jpg" alt="">
                 <div class="rating-of-popular">
                     <i class="fa-solid fa-star"></i>
@@ -243,9 +265,14 @@
                     <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
 
+                
+                
+
                 <div class="content-of-popular">
                     <h2>Tasty Pizza</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita. Voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error
+                        exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita.
+                        Voluptatem.</p>
                     <div class="price-of-popular-items">
                         <a href="#order-now-section" class="order-now-btn-of-popular" href="">Order Now</a>
                         <span>Rs. 300</span>
@@ -253,7 +280,7 @@
                 </div>
             </div>
 
-            <div class="box-of-popular">
+            <div class="box-of-popular" >
                 <img src="./images/popular-2.jpg" alt="">
                 <div class="rating-of-popular">
                     <i class="fa-solid fa-star"></i>
@@ -265,7 +292,9 @@
 
                 <div class="content-of-popular">
                     <h2>Tasty Burger</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita. Voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error
+                        exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita.
+                        Voluptatem.</p>
                     <div class="price-of-popular-items">
                         <a href="#order-now-section" class="order-now-btn-of-popular" href="">Order Now</a>
                         <span>Rs. 300</span>
@@ -273,7 +302,7 @@
                 </div>
             </div>
 
-            <div class="box-of-popular">
+            <div class="box-of-popular" >
                 <img src="./images/popular-3.jpg" alt="">
                 <div class="rating-of-popular">
                     <i class="fa-solid fa-star"></i>
@@ -285,7 +314,9 @@
 
                 <div class="content-of-popular">
                     <h2>Tasty Paratha</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita. Voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error
+                        exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita.
+                        Voluptatem.</p>
                     <div class="price-of-popular-items">
                         <a href="#order-now-section" class="order-now-btn-of-popular" href="">Order Now</a>
                         <span>Rs. 300</span>
@@ -293,7 +324,7 @@
                 </div>
             </div>
 
-            <div class="box-of-popular">
+            <div class="box-of-popular" >
                 <img src="./images/popular-4.jpg" alt="">
                 <div class="rating-of-popular">
                     <i class="fa-solid fa-star"></i>
@@ -305,7 +336,9 @@
 
                 <div class="content-of-popular">
                     <h2>Tasty Pasta</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita. Voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error
+                        exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita.
+                        Voluptatem.</p>
                     <div class="price-of-popular-items">
                         <a href="#order-now-section" class="order-now-btn-of-popular" href="">Order Now</a>
                         <span>Rs. 300</span>
@@ -313,7 +346,7 @@
                 </div>
             </div>
 
-            <div class="box-of-popular">
+            <div class="box-of-popular" >
                 <img src="./images/popular-5.jpg" alt="">
                 <div class="rating-of-popular">
                     <i class="fa-solid fa-star"></i>
@@ -325,7 +358,9 @@
 
                 <div class="content-of-popular">
                     <h2>Tasty Cake</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita. Voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error
+                        exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita.
+                        Voluptatem.</p>
                     <div class="price-of-popular-items">
                         <a href="#order-now-section" class="order-now-btn-of-popular" href="">Order Now</a>
                         <span>Rs. 300</span>
@@ -333,7 +368,7 @@
                 </div>
             </div>
 
-            <div class="box-of-popular">
+            <div class="box-of-popular" > 
                 <img src="./images/popular-6.jpg" alt="">
                 <div class="rating-of-popular">
                     <i class="fa-solid fa-star"></i>
@@ -345,7 +380,9 @@
 
                 <div class="content-of-popular">
                     <h2>Tasty Orange Juice</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita. Voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error
+                        exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita.
+                        Voluptatem.</p>
                     <div class="price-of-popular-items">
                         <a href="#order-now-section" class="order-now-btn-of-popular" href="">Order Now</a>
                         <span>Rs. 300</span>
@@ -353,7 +390,7 @@
                 </div>
             </div>
 
-            <div class="box-of-popular">
+            <div class="box-of-popular" >
                 <img src="./images/popular-7.jpg" alt="">
                 <div class="rating-of-popular">
                     <i class="fa-solid fa-star"></i>
@@ -365,7 +402,9 @@
 
                 <div class="content-of-popular">
                     <h2>Cold Drinks</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita. Voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error
+                        exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita.
+                        Voluptatem.</p>
                     <div class="price-of-popular-items">
                         <a href="#order-now-section" class="order-now-btn-of-popular" href="">Order Now</a>
                         <span>Rs. 300</span>
@@ -373,7 +412,7 @@
                 </div>
             </div>
 
-            <div class="box-of-popular">
+            <div class="box-of-popular" >
                 <img src="./images/popular-8.jpg" alt="">
                 <div class="rating-of-popular">
                     <i class="fa-solid fa-star"></i>
@@ -385,7 +424,9 @@
 
                 <div class="content-of-popular">
                     <h2>Tasty Ice-Cream</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita. Voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error
+                        exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita.
+                        Voluptatem.</p>
                     <div class="price-of-popular-items">
                         <a href="#order-now-section" class="order-now-btn-of-popular" href="">Order Now</a>
                         <span>Rs. 300</span>
@@ -393,7 +434,7 @@
                 </div>
             </div>
 
-            <div class="box-of-popular">
+            <div class="box-of-popular" >
                 <img src="./images/popular-9.jpg" alt="">
                 <div class="rating-of-popular">
                     <i class="fa-solid fa-star"></i>
@@ -405,7 +446,9 @@
 
                 <div class="content-of-popular">
                     <h2>Tasty Cup-Cakes</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita. Voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur nisi error
+                        exercitationem, modi voluptatum soluta reiciendis similique! Porro, quaerat expedita.
+                        Voluptatem.</p>
                     <div class="price-of-popular-items">
                         <a href="#order-now-section" class="order-now-btn-of-popular" href="">Order Now</a>
                         <span>Rs. 300</span>
@@ -416,7 +459,7 @@
     </div>
 
     <!-- Review Section -->
-     <div id="review-section">
+    <div id="review-section">
         <div class="review-headings">
             <h2>Customer's Review</h2>
             <h1>WHAT THEY SAY</h1>
@@ -438,7 +481,12 @@
                 </div>
 
                 <div class="content-of-review">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, aut provident laudantium consequuntur tempora adipisci in iure repellendus a molestias voluptas, autem dolore ea labore magnam est sequi. Est dicta odit possimus, eos voluptatibus iure ipsum suscipit! Rem, quasi suscipit impedit repellendus ullam ab. Explicabo est facere dolorem tempora, quia quos illo vero officia dolore mollitia expedita quis magni. Accusamus excepturi totam, illo aperiam iure necessitatibus itaque. Voluptatem, atque quisquam?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, aut provident laudantium
+                        consequuntur tempora adipisci in iure repellendus a molestias voluptas, autem dolore ea labore
+                        magnam est sequi. Est dicta odit possimus, eos voluptatibus iure ipsum suscipit! Rem, quasi
+                        suscipit impedit repellendus ullam ab. Explicabo est facere dolorem tempora, quia quos illo vero
+                        officia dolore mollitia expedita quis magni. Accusamus excepturi totam, illo aperiam iure
+                        necessitatibus itaque. Voluptatem, atque quisquam?</p>
                 </div>
             </div>
 
@@ -457,7 +505,12 @@
                 </div>
 
                 <div class="content-of-review">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, aut provident laudantium consequuntur tempora adipisci in iure repellendus a molestias voluptas, autem dolore ea labore magnam est sequi. Est dicta odit possimus, eos voluptatibus iure ipsum suscipit! Rem, quasi suscipit impedit repellendus ullam ab. Explicabo est facere dolorem tempora, quia quos illo vero officia dolore mollitia expedita quis magni. Accusamus excepturi totam, illo aperiam iure necessitatibus itaque. Voluptatem, atque quisquam?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, aut provident laudantium
+                        consequuntur tempora adipisci in iure repellendus a molestias voluptas, autem dolore ea labore
+                        magnam est sequi. Est dicta odit possimus, eos voluptatibus iure ipsum suscipit! Rem, quasi
+                        suscipit impedit repellendus ullam ab. Explicabo est facere dolorem tempora, quia quos illo vero
+                        officia dolore mollitia expedita quis magni. Accusamus excepturi totam, illo aperiam iure
+                        necessitatibus itaque. Voluptatem, atque quisquam?</p>
                 </div>
             </div>
         </div>
@@ -478,7 +531,12 @@
                 </div>
 
                 <div class="content-of-review">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, aut provident laudantium consequuntur tempora adipisci in iure repellendus a molestias voluptas, autem dolore ea labore magnam est sequi. Est dicta odit possimus, eos voluptatibus iure ipsum suscipit! Rem, quasi suscipit impedit repellendus ullam ab. Explicabo est facere dolorem tempora, quia quos illo vero officia dolore mollitia expedita quis magni. Accusamus excepturi totam, illo aperiam iure necessitatibus itaque. Voluptatem, atque quisquam?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, aut provident laudantium
+                        consequuntur tempora adipisci in iure repellendus a molestias voluptas, autem dolore ea labore
+                        magnam est sequi. Est dicta odit possimus, eos voluptatibus iure ipsum suscipit! Rem, quasi
+                        suscipit impedit repellendus ullam ab. Explicabo est facere dolorem tempora, quia quos illo vero
+                        officia dolore mollitia expedita quis magni. Accusamus excepturi totam, illo aperiam iure
+                        necessitatibus itaque. Voluptatem, atque quisquam?</p>
                 </div>
             </div>
 
@@ -497,11 +555,16 @@
                 </div>
 
                 <div class="content-of-review">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, aut provident laudantium consequuntur tempora adipisci in iure repellendus a molestias voluptas, autem dolore ea labore magnam est sequi. Est dicta odit possimus, eos voluptatibus iure ipsum suscipit! Rem, quasi suscipit impedit repellendus ullam ab. Explicabo est facere dolorem tempora, quia quos illo vero officia dolore mollitia expedita quis magni. Accusamus excepturi totam, illo aperiam iure necessitatibus itaque. Voluptatem, atque quisquam?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, aut provident laudantium
+                        consequuntur tempora adipisci in iure repellendus a molestias voluptas, autem dolore ea labore
+                        magnam est sequi. Est dicta odit possimus, eos voluptatibus iure ipsum suscipit! Rem, quasi
+                        suscipit impedit repellendus ullam ab. Explicabo est facere dolorem tempora, quia quos illo vero
+                        officia dolore mollitia expedita quis magni. Accusamus excepturi totam, illo aperiam iure
+                        necessitatibus itaque. Voluptatem, atque quisquam?</p>
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
 
     <!-- order now section -->
     <div id="order-now-section">
@@ -514,19 +577,22 @@
             <div>
                 <div class="name-phone-quantity-of-order-now">
                     <label class="label-of-order-now" for="name">Your Name</label>
-                    <input class="input-of-order-now padding-for-responsive-design" id="name" type="text" placeholder="Enter Your Name">
+                    <input class="input-of-order-now padding-for-responsive-design" id="name" type="text"
+                        placeholder="Enter Your Name">
                 </div>
 
                 <div>
                     <label class="label-of-order-now" for="email">Your Email Address</label>
-                    <input class="input-of-order-now" id="emailAddress" type="email" placeholder="Enter Your Email Address">
+                    <input class="input-of-order-now" id="emailAddress" type="email"
+                        placeholder="Enter Your Email Address">
                 </div>
             </div>
 
             <div>
                 <div class="name-phone-quantity-of-order-now">
                     <label class="label-of-order-now" for="phone-no">Your Phone Number</label>
-                    <input class="input-of-order-now padding-for-responsive-design" id="phone-no" type="number" placeholder="Enter Your Phone Number">
+                    <input class="input-of-order-now padding-for-responsive-design" id="phone-no" type="number"
+                        placeholder="Enter Your Phone Number">
                 </div>
 
                 <div>
@@ -538,7 +604,8 @@
             <div>
                 <div class="name-phone-quantity-of-order-now">
                     <label class="label-of-order-now" for="quantity">Quantity</label>
-                    <input class="input-of-order-now padding-for-responsive-design" id="quantity" type="number" placeholder="Enter Quantity">
+                    <input class="input-of-order-now padding-for-responsive-design" id="quantity" type="number"
+                        placeholder="Enter Quantity">
                 </div>
 
                 <div>
@@ -550,13 +617,14 @@
             <div>
                 <div style="width: 100%;">
                     <label class="label-of-order-now" for="res-address">Your Residential Address</label>
-                    <textarea class="text-area-of-res-address" id="res-address" cols="30" rows="10" placeholder="Enter Your Residential Address"></textarea>
+                    <textarea class="text-area-of-res-address" id="res-address" cols="30" rows="10"
+                        placeholder="Enter Your Residential Address"></textarea>
                 </div>
             </div>
 
             <button id="order-now-btn-of-order-now-section" type="button" onclick="orderNow()">Order Now</button>
         </form>
-    </div> 
+    </div>
 
     <!-- footer section -->
     <div class="footer">
@@ -593,14 +661,31 @@
             <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f fa-4x"></i></a>
             <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-4x"></i></a>
             <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-4x"></i></a>
-           <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp fa-4x"></i></a>
+            <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp fa-4x"></i></a>
         </div>
     </div>
 
     <footer>
         <p>&copy;2022 - THE HEAVEN'S KITCHEN - ALL RIGHTS RESERVED</p>
-    </footer> 
+    </footer>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+    </script>
 
     <script src="./Project4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
